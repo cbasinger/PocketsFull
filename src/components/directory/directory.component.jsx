@@ -2,6 +2,20 @@ import React from 'react';
 
 import MenuItem from '../menu-item/menu-item.component';
 
+/* import {
+    Cicada,
+    Chipmunk,
+    GreenTreeBoa,
+    RedWingParrot,
+    Frog
+} from '../../assets/photos/index'; */
+
+import Cicada from '../../assets/photos/Bugs/cicada.png';
+import Chipmunk from '../../assets/photos/Small Mammals/chipmunk.png';
+import RedWingParrot from '../../assets/photos/Birds/redwingparrot.png';
+import Frog from '../../assets/photos/wet specimens/frog.png';
+import GreenTreeBoa from '../../assets/photos/reptiles/greentreeboa.png';
+
 import './directory.styles.scss';
 
 class Directory extends React.Component {
@@ -10,36 +24,36 @@ class Directory extends React.Component {
 
         this.state = {
             sections: [{
-                title: 'hats',
-                imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+                title: 'Bugs',
+                imageURL: {Cicada},
                 id: 1,
-                linkUrl: 'shop/hats'
+                linkUrl: 'shop/bugs'
             },
             {
-                title: 'jackets',
-                imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+                title: 'Small Mammals',
+                imageURL: {Chipmunk},
                 id: 2,
-                linkUrl: 'shop/jackets'
+                linkUrl: 'shop/small-mammals'
             },
             {
-                title: 'sneakers',
-                imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+                title: 'Reptiles',
+                imageURL: {GreenTreeBoa},
                 id: 3,
-                linkUrl: 'shop/sneakers'
+                linkUrl: 'shop/reptiles'
             },
             {
-                title: 'womens',
-                imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+                title: 'Birds',
+                imageURL: {RedWingParrot},
                 size: 'large',
                 id: 4,
-                linkUrl: 'shop/womens'
+                linkUrl: 'shop/birds'
             },
             {
-                title: 'mens',
-                imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+                title: 'Wet Specimens',
+                imageURL: {Frog},
                 size: 'large',
                 id: 5,
-                linkUrl: 'shop/mens'
+                linkUrl: 'shop/wet-specimens'
             }]
         }
     }

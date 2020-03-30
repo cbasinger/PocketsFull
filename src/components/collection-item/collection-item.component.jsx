@@ -1,12 +1,12 @@
 import React from 'react';
 import './collection-item.styles.scss';
 
-const CollectionItem = ({id, name, price, imageUrl }) => (
+const CollectionItem = ({id, name, price, image }) => (
     <div className='collection-item'>
         <div 
         className='image'
         style={{
-            backgroundImage: `url(${imageUrl})`
+            backgroundImage: `${image}`
         }}
         />
         <div className='collection-footer'>
