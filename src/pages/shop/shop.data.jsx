@@ -1,4 +1,4 @@
-/* import { 
+import { 
     Cicada,
     LunaMoth,
     RhinoBeetle,
@@ -29,45 +29,11 @@
     Kitten,
     Turtle
 
-} from '../../assets/photos/index'; */
-import React from 'react';
+} from '../../assets/photos/index';
 
-import Cicada from '../../assets/photos/Bugs/cicada.png';
-import LunaMoth from '../../assets/photos/Bugs/lunamoth.png';
-import RhinoBeetle from'../../assets/photos/Bugs/rhinobeetle.png';
-import SiamButterfly from '../../assets/photos/Bugs/siambutterfly.png';
-import StagBeetle from '../../assets/photos/Bugs/stagbeetle.png';
 
-import Chipmunk from '../../assets/photos/Small Mammals/chipmunk.png';
-import Fox from '../../assets/photos/Small Mammals/fox.png';
-import Mouse from '../../assets/photos/Small Mammals/mouse.png';
-import Rabbit from '../../assets/photos/Small Mammals/rabbit.png';
-import Squirrel from '../../assets/photos/Small Mammals/squirrel.png';
-
-import GreenTreeBoa from '../../assets/photos/reptiles/greentreeboa.png';
-import Alligator from '../../assets/photos/reptiles/alligator.png';
-import BeardedDragon from '../../assets/photos/reptiles/beardeddragon.png';
-import Iguana from '../../assets/photos/reptiles/iguana.png';
-import Rattlesnake from '../../assets/photos/reptiles/rattlesnake.png';
-
-import RedWingParrot from '../../assets/photos/Birds/redwingparrot.png';
-import Sparrowhawk from '../../assets/photos/Birds/sparrowhawk.png';
-import GreyHornbill from '../../assets/photos/Birds/greyhornbill.png';
-import Magpie from '../../assets/photos/Birds/magpie.png';
-import Pheasant from '../../assets/photos/Birds/pheasant.png'
-import AfricanGreyParrot from '../../assets/photos/Birds/africangreyparrot.png';
-import Mallard from '../../assets/photos/Birds/mallard.png';
-import BobwhiteQuail from '../../assets/photos/Birds/bobwhitequail.png';
-import Lovebird from '../../assets/photos/Birds/lovebird.png';
-
-import Frog from '../../assets/photos/wet specimens/frog.png';
-import Nautilus from '../../assets/photos/wet specimens/nautilus.png';
-import Octopus from '../../assets/photos/wet specimens/octopus.png';
-import Kitten from '../../assets/photos/wet specimens/kitten.png';
-import Turtle from '../../assets/photos/wet specimens/turtle.png';
-
-const SHOP_DATA = [
-    {
+const SHOP_DATA = {
+    bugs: {
         id: 1,
         title: 'Bugs',
         routeName: 'bugs',
@@ -75,7 +41,7 @@ const SHOP_DATA = [
             {
                 id: 1,
                 name: 'Cicada',
-                imageURL: '../../assets/photos/bugs/cicada.png',
+                imageURL: `${Cicada}`,
                 price: 60
             },
             {
@@ -104,7 +70,7 @@ const SHOP_DATA = [
             }
         ]
     },
-    {
+    smallmammals: {
         id: 2,
         title: 'Small Mammals',
         routeName: 'small-mammals',
@@ -141,7 +107,7 @@ const SHOP_DATA = [
             },
         ]
     },
-    {
+    reptiles: {
         id: 3,
         title: 'Reptiles',
         routeName: 'reptiles',
@@ -178,7 +144,7 @@ const SHOP_DATA = [
             },
         ]
     },
-    {
+    birds: {
         id: 4,
         title: 'Birds',
         routeName: 'birds',
@@ -239,7 +205,7 @@ const SHOP_DATA = [
             },
         ]
     },
-    {
+    wetspecimens:{
         id: 5,
         title: 'Wet Specimens',
         routeName: 'wet-specimens',
@@ -276,7 +242,7 @@ const SHOP_DATA = [
             }
         ] 
     }
-];
+};
 
 export default SHOP_DATA;
 
